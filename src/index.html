@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThreeJS Starter</title>
+    <title>LowpolyCar</title>
 </head>
 <body>
+    <div class="container">
+        <h1><i>Cars</i></h1>
+    </div>
     <canvas class="webgl"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const h1 = document.querySelector('h1')
+        const tl = gsap.timeline()
+        tl.to(h1,{duration:0.52, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'})
+    </script>
 </body>
 </html>

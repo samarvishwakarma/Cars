@@ -7,14 +7,42 @@
 html,
 body
 {
-    height: 100vh;
-    font-family: 'Poppins';
+    height: 0vh;
+    font-family: 'magneto';
+    background: rgb(30, 39, 58);
 }
 
-.webgl
+body
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* .webgl
 {
     position: fixed;
     top: 0;
     left: 0;
     outline: none;
+
+} */
+
+.container
+{
+    height: 0vh;
+    display: grid;
+    place-items: center;
+}
+
+h1
+{
+    font-size: 8vw;
+    /* text-transform: uppercase; */
+    /* color: Orange; */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background: -webkit-linear-gradient(yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
